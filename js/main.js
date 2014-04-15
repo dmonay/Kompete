@@ -68,7 +68,7 @@ function initmap() {
 					options: {
 						//maxZoom:11,
 						zoom: 18,
-						mapTypeId: google.maps.MapTypeId.SATELLITE,
+						mapTypeId: google.maps.MapTypeId.ROADMAP,
 						// ('ROADMAP', 'SATELLITE', 'HYBRID','TERRAIN');
 						scrollwheel: false,
 						draggable: draggable,
