@@ -62,7 +62,7 @@
 
 <div class="parallaxSection height100">
 
-  <section class="flexslider std-slider center-controls" data-height="560" data-loop="true" data-smooth="false" data-slideshow="true" data-speed="5000" data-animspeed="500" data-controls="false" data-dircontrols="true">
+  <section class="flexslider std-slider center-controls" data-height="560" data-loop="true" data-smooth="false" data-slideshow="true" data-speed="3500" data-animspeed="500" data-controls="false" data-dircontrols="true">
     <ul class="slides">
       <li data-bg="images/mine/slide4.jpg">
         <div class="container">
@@ -105,32 +105,27 @@
     <div class="row">
       <div class="col-md-4 col-md-push-2">
         <p>
-          Curabitur lacinia mi sem, in iaculis ligula blandit. Aenean ornare erat eget accumsan interdum. Purus vulputate. Nunc at orci venenatis, odio vel, egestas eros. Nullam ac est a ante faucibus. Sed est neque,
-          laoreet at laoreet eget, iaculis vitae libero.
-
-        <p>
-
-        <p>
-          Donec faucibus ullamcorper pulvinar. Duis quis tempus varius, sapien urna pretium libero, nec mollis eros dolor eget velit. Nulla ornare ut nisi sodales consequat.
+          <b>An opportunity for athletes...</b><br>
         </p>
-
         <p>
-          Duis ut posuere augue, a interdum nisi. Etiam libero sit amet tempus sodales, ante diam.
+          Krossover Kompete is a competition for high school atheltes with game film and data on the Krossover platform. They will enter for a chance to be selected to participate at a week-long basketball clinic in New York City and play an exhibition game in front of fans, family, coaches, and college recruiters at Madison Square Garden, world's most famous arena.
         </p>
+        
+
+        
       </div>
       <div class="col-md-4 col-md-push-2">
         <p>
-          Phasellus eu tellus eget massa ultrices rhoncus. Quam massa, tincidunt semper sapien.
+          <b>And an opportunity for you.</b><br>
         </p>
 
         <p>
-          Posuere eleifend dolor. Vivamus purus ligula, venenatis nec elit at, tempus bibendum ipsum. Proin sed vehicula lectus. Curabitur augue diam, tincidunt venenatis lacinia, vulputate at lectus.
+          We know that as a college recruiter you're busy. You don't have the budget to travel up and down the nation to scout out diamonds in the rough that may or may not pan out. Krossover Select tracks and breaks down the games of all your recruits so you could have an intelligence edge. Throughoug the Krossover Kompete selection process, you can keep an eye on the most promising underdogs out there. At the Krossover Klinic, you will witness these players at their best.      
         </p>
 
-        <p>
-          Donec tempus velit vitae quam sodales, sit amet augue malesuada sem adipiscing. Aliquam dolor urna, rhoncus quis ullamcorper vel.
-        </p>
+        
       </div>
+
 
     </div>
 
@@ -158,7 +153,7 @@
               <h4 class="media-heading"><a href="#">Athletes Apply</a></h4>
 
               <p>
-                Praesent dignissim dui eu urna feugiat lobortis. Morbi varius nibh sit amet adipiscing mollis. Aenean id neque ut augue gravida posuere.
+                Athelets or coaches will provide us with footage of their game. We’ll break each event from the game with its own video clip tagged with play information and stats from the footage and enter the player into draft rounds for selection.
               </p>
             </div>
           </div>
@@ -176,7 +171,7 @@
               <h4 class="media-heading"><a href="#">Krossover footage</a></h4>
 
               <p>
-                Nam pharetra justo turpis, quis rutrum lorem lobortis euismod. Praesent augue, consectetur ultricies eros non, lacinia scelerisque ante.
+                Krossover footage breaks each event from the game with its own video clip tagged with play information and stats from the footage. We provide intelligence to break down the game in a way that lets coaches and players learn the game.
               </p>
             </div>
           </div>
@@ -194,7 +189,7 @@
               <h4 class="media-heading"><a href="#">Selection Process</a></h4>
 
               <p>
-                Aenean vitae neque mi. Phasellus tempor risus non risus tristique, quis egestas velit vulputate. Sed porttitor non nunc non pharetra risus.
+                There are three draft rounds. The first selects 500 top players at the local level. The second selects 200 to go on to the regional selection. In the third round, a panel of select coaches selects the top 18 to enter the Klinic.
               </p>
             </div>
           </div>
@@ -212,7 +207,7 @@
               <h4 class="media-heading"><a href="#">Krossover Klinic</a></h4>
 
               <p>
-                Duis quis elit hendrerit, tempor magna ac, adipiscing ligula. Maecenas neque nibh, vehicula ut neque at, scelerisque mollis risus non enim.
+                At this week-long event, rising ballers from across the country meet and learn the art of the game from the top coaches and players nationwide, culminating in a showcase game seen by fans and college recruiters live and via telecast.
               </p>
             </div>
           </div>
@@ -364,89 +359,13 @@
       </div>
 
     </div><br>
-    <div id="stats" class="text-center hidden animated" data-fx="fadeInUp">
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script>
-    var margin = {top: 80, right: 50, bottom: 80, left: 80},
-    width = 600 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
-
-var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
-
-var y0 = d3.scale.linear().domain([0, 40]).range([height, 0]),
-y1 = d3.scale.linear().domain([0, 20]).range([height, 0]);
-
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-// create left yAxis
-var yAxisLeft = d3.svg.axis().scale(y0).ticks(4).orient("left");
-// create right yAxis
-var yAxisRight = d3.svg.axis().scale(y1).ticks(6).orient("right");
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("class", "graph")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-d3.tsv("data.tsv", type, function(error, data) {
-  x.domain(data.map(function(d) { return d.year; }));
-  y0.domain([0, d3.max(data, function(d) { return d.money; })]);
-  
-  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
-
-  svg.append("g")
-    .attr("class", "y axis axisLeft")
-    .attr("transform", "translate(0,0)")
-    .call(yAxisLeft)
-  .append("text")
-    .attr("y", 6)
-    .attr("dy", "-2em")
-    .style("text-anchor", "end")
-    .style("text-anchor", "end")
-    .text("PPG");
-  
-  svg.append("g")
-    .attr("class", "y axis axisRight")
-    .attr("transform", "translate(" + (width) + ",0)")
-    .call(yAxisRight)
-  .append("text")
-    .attr("y", 6)
-    .attr("dy", "-2em")
-    .attr("dx", "2em")
-    .style("text-anchor", "end")
-    .text("RPG");
-
-  bars = svg.selectAll(".bar").data(data).enter();
-
-  bars.append("rect")
-      .attr("class", "bar1")
-      .attr("x", function(d) { return x(d.year); })
-      .attr("width", x.rangeBand()/2)
-      .attr("y", function(d) { return y0(d.money); })
-    .attr("height", function(d,i,j) { return height - y0(d.money); }); 
-
-  bars.append("rect")
-      .attr("class", "bar2")
-      .attr("x", function(d) { return x(d.year) + x.rangeBand()/2; })
-      .attr("width", x.rangeBand() / 2)
-      .attr("y", function(d) { return y1(d.number); })
-    .attr("height", function(d,i,j) { return height - y1(d.number); }); 
-
-});
-
-function type(d) {
-  d.money = +d.money;
-  return d;
-}
-    </script>
+    <div id="stats" class="text-center hidden animated " data-fx="fadeInUp" >
+      <div class="col-lg-6 col-sm-6 animated" data-fx="fadeInLeft" >
+        <img src="images/mine/stats2.png">
+      </div>
+      <div class="col-lg-6 col-sm-6 animated" data-fx="fadeInRight">
+        <img src="images/mine/stats3.png">
+      </div>
     </div>
   </div>
 </section>
